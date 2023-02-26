@@ -1,0 +1,165 @@
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(145 145 145);
+  color: rgb(245, 243, 243);
+  overflow: hidden;
+}
+
+/*Scroll Bar*/
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+      border-radius: 3px; 
+
+  background: rgb(255, 255, 255);  
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(3, 3, 43);
+  border-radius: 40px; 
+  border: 2px solid rgb(255, 255, 255); 
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+  background-color: #04011a;
+}
+
+.title{
+  font-size: 24px;
+}
+
+#returnMain {
+  padding: 16px 34px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.555);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+
+  font-family: "Inter";
+  font-weight: 600px;
+  font-size: 16px;
+  line-height: 125%;
+  transition: all 0.4s;
+}
+
+#returnMain:hover{
+  border: 1px solid #f55d5d;
+  color: rgb(255, 255, 255);
+}
+
+.projeto-container{
+  height: 58vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+.game-projeto-container{
+  width: 20%;
+  background: #00041a;
+  border-radius: 0 50px 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.game-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instrucoes{
+  margin: 10px
+}
+
+main{
+  display: block;
+}
+
+canvas {
+  display: block;
+}
+
+
+/* Footer */
+
+#footer-general {
+  height: 20vh;
+  background-color: #04011a;
+  color: rgb(247, 243, 235);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30%;
+}
+
+.social-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.icons-info{
+  text-decoration: none;
+  color: #a1a1aa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  gap: 30px;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #a1a1aa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  gap: 15px;
+}
+
+.icon-link:hover {
+    color: azure;
+}
+
+.rodape-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "Roboto Mono";
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.rodape-info h1 {
+  font-size: 24px;
+}
+
+.rodape-info p {
+  font-size: 14px;
+}
